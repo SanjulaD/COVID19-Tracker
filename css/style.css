@@ -1,0 +1,295 @@
+img{
+    width: 180px;
+    align-items: center;
+    margin-left: 46%;
+    margin-top: -50px;
+}
+
+#GovLogo {
+  float: left;
+  width: 60px;
+  margin-left: 20px;
+  margin-top: auto;
+  padding: 10px;
+}
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Dosis', sans-serif !important;
+    line-height: 1.6;
+    color: #666;
+    text-decoration: none !important;
+  }
+  
+  #root {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    padding: 1.5rem 2.5rem;
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #f7f8f4 100%);
+    margin: 0 0 0rem 0;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Dosis', sans-serif;
+    box-shadow: 20px 4px 25px rgba(0, 0, 0, .1);
+    font-weight: 400;
+  }
+  
+  img {
+    display: block;
+    margin: 1rem auto;
+    width: 100%;
+  }
+  #slFlag {
+    display: block;
+    margin: 1rem auto;
+    width: 20% !important;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+  #worldFlag {
+    display: block;
+    margin: 1rem auto;
+    width: 65% !important;
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    margin: 1rem;
+    background: white;
+    box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all .2s linear;
+    margin-bottom: 10px !important;
+  }
+
+  .card:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -8px, 0);
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem) !important;
+    
+    }
+    #GovLogo{
+      float: none;
+      margin-left: 40%;
+      padding: 0px !important;
+      margin-top: 20px !important;
+    }
+    #slFlag {
+      width: 30% !important;
+      margin-bottom: 20px !important;
+    }
+    .row{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+    #worldFlag {
+      width: 80% !important;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .card {
+      flex: 1 1 calc(50% - 2rem) !important;
+    }
+    .row{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+  }
+
+  @media screen and (width: 1280px) {
+    .card {
+        flex: 1 1 calc(50% - 2rem) !important;
+      }
+      .row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .card {
+        flex: 1 1 calc(100% - 50rem) !important;
+      }
+      .row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+        margin: 1.5rem !important; 
+    }
+    .alert{
+        align-items: center;
+        margin-bottom: 10px;
+        display: flex;
+        margin-left: 15% !important;
+    }
+    .btn-group{
+      align-items: center;
+      margin-left: 30% !important;
+      margin-top: 10px !important;
+      padding: 0px 10px px 0px;
+    }
+    .card-Images {
+      margin-top: 0px !important;
+    }
+    .row{
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+  }
+  
+  .card:nth-child(1n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #ebb07f 100%);
+  }
+
+  .card:nth-child(2n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #8fd3f4 100%);
+  }
+  
+  .card:nth-child(4n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #fecfef 100%);
+  }
+  
+  .card:nth-child(5n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #d2e758 100%);
+  }
+  .card:nth-child(3n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #4ba87d 100%);
+  }
+  .card:nth-child(6n) h1 {
+    background-image: linear-gradient(120deg, #f7f8f4 0%, #d4c56f 100%);
+  }
+
+  .alert{
+      position: absolute;
+      display: flex;
+      margin-left: 32%;
+      color: #036172;
+      font-weight: bold;
+      font-family: 'Dosis', sans-serif;
+      letter-spacing: 0.5px;
+  }
+
+  h2{
+      margin-top: 15px !important;
+      padding: 0 0.5rem 0.5rem;
+      margin: 0;
+      color: #000000; 
+      font-weight: bold;
+  }
+
+  /* footer------------- */
+  .footer {
+    text-align: center;
+    padding: 10px 0px 50px 0px;
+    margin-top: 50px;
+    font-size: 22px;
+    text-decoration: none !important;
+  }
+  .footer a {
+    color: #000000;
+  }
+
+  #copyright {
+    color: #3b5998;
+    font-size: 18px;
+  }
+  #copyright:hover {
+    color: #000000;
+  }
+  .footer:hover a{
+    text-decoration: none !important;
+  }
+  .social-icons{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .icon {
+    padding: 10px 10px 0px 0px;
+  }
+
+  .fa{
+    text-align: center;
+    padding: 10px;
+    display: inline-block;
+    -moz-border-radius: 50px !important;
+    -webkit-border-radius: 50px !important;
+    border-radius: 50px !important;
+    -moz-box-shadow: 0px 0px 2px #888;
+    -webkit-box-shadow: 0px 0px 2px #888;
+    box-shadow: 0px 0px 2px #888;
+  }
+
+  .fa-facebook:hover{
+    background-color: #3b5998;
+    color: white;
+  }
+  .fa-instagram:hover{
+    background-color: #e02d6e;
+    color: white;
+  }
+  .fa-linkedin:hover{
+    background-color: #0e76a8;
+    color: white;
+  }
+  .fa-github:hover{
+    background-color: 211F1F;
+    color: white;
+  }
+
+  .btn-group{
+    align-items: center;
+    margin-left: 42%;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    padding: 0px 10px 10px 0px;
+  }
+  .btn-info a{
+    color: white !important;
+    font-weight: 500;
+  }
+  .btn a:hover{
+    text-decoration: none;
+  }
+  .btn-light a{
+    color: #17a2b8 !important;
+  }
+.card-Images {
+  margin-top: 100px;
+}
+
+.row{
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.card-header {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.5px;
+  background-color: #ebf5f7;
+}
