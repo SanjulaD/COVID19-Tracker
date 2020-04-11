@@ -1,7 +1,7 @@
 # COVID19-Tracker
 📈 Coronavirus (COVID-19) dashboard to show the dynamics of Сoronavirus distribution.
 
-Check this : https://sanjulad.github.io/COVID19-Tracker/
+Check this : https://lnkd.in/fgeTck7
 
 Front-end wise I've tried to make it as simple as possible, therefore the dashboard is using a pure Javascript.
 
