@@ -84,7 +84,7 @@ request.onload = function () {
         
         //adding local total cases
         const head2 = document.createElement('h1');
-        head2.textContent = "Total Cases";
+        head2.textContent = "Suspected & Hospitalized";
         const result2 = document.createElement('h2');
         result2.textContent = myData.data.local_total_number_of_individuals_in_hospitals;
         console.log('Total cases : '+result2.textContent);
@@ -115,7 +115,7 @@ request.onload = function () {
 
         //adding current active cases
         const head6 = document.createElement('h1');
-        head6.textContent = " Active Cases";
+        head6.textContent = "Active Cases";
         const result6 = document.createElement('h2');
         result6.textContent = myData.data.local_active_cases;
         console.log('Current active cases : '+result6.textContent);
