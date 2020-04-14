@@ -1,5 +1,5 @@
 # COVID19-Tracker
-📈 Coronavirus (COVID-19) dashboard to show the dynamics of Сoronavirus distribution.
+📈 Coronavirus (COVID-19) dashboard to show the dynamics of Сoronavirus distribution .
 
 Check this : https://lnkd.in/fgeTck7
 
