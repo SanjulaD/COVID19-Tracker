@@ -289,3 +289,7 @@ td {
   margin-top: -75px;
   background-color: white !important;
 }
+.col-death {
+  background-color: #e2302a !important;
+  color: white !important;
+}
