@@ -1,6 +1,6 @@
 
 body{
-  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-color: #f9fbfd !important;
 }
 img{
     width: 180px;
@@ -11,19 +11,20 @@ img{
 
 #GovLogo {
   float: left;
-  width: 60px;
+  width: 70px;
   margin-left: 20px;
   margin-top: auto;
-  padding: 10px;
+  background-color: #f9fbfd !important;
 }
 h1 {
     text-align: center;
     margin-top: 50px;
+    font-family: 'Raleway', sans-serif !important; 
 }
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-family: 'Dosis', sans-serif !important;
+    
     line-height: 1.6;
     color: #666;
     text-decoration: none !important;
@@ -35,14 +36,15 @@ h1 {
   }
   
   h1 {
-    text-align: center;
-    padding: 1.5rem 2.5rem;
+    text-align: left;
+    padding: 1rem;
     margin: 0 0 0rem 0;
     font-size: 1.8rem;
     color: rgb(0, 0, 0);
     font-family: 'Dosis', sans-serif;
     box-shadow: 1px 1px 5px 0px  rgba(0, 0, 0, .1);
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 300;
   }
   
   img {
@@ -70,7 +72,7 @@ h1 {
   }
   
   .card {
-    margin: 1rem;
+    margin: 0.4rem !important;
     background: white;
     box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, .1);
     border-radius: 12px;
@@ -83,7 +85,18 @@ h1 {
     box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
     transform: translate3D(0, -8px, 0);
   }
-
+  @media screen and (width: 320px) {
+    h1 .anime-span img{
+      width: 40px !important;
+      position: absolute;
+      margin-left: 1rem !important;
+      margin-top: 10px !important;
+    }
+    .btn-stat-info {
+      margin-bottom: 0px !important;
+      margin-left: -50px !important;
+    }
+  }
   @media screen and (max-width: 600px) {
     .card {
       flex: 1 1 calc(50% - 2rem) !important;
@@ -109,6 +122,16 @@ h1 {
     #worldFlag {
       width: 80% !important;
     }
+    h1 .anime-span img{
+      width: 40px !important;
+      position: absolute;
+      margin-left: 12rem !important;
+      margin-top: 10px !important;
+    }
+    .btn-stat-info {
+      margin-bottom: 50px !important;
+      margin-left: -70px !important;
+    }
   }
   
   @media screen and (max-width: 900px) {
@@ -118,6 +141,11 @@ h1 {
     .row{
       margin-left: 0px !important;
       margin-right: 0px !important;
+    }
+    .btn-stat-info {
+      margin-bottom: -50px !important;
+      margin-left: -70px !important;
+      position: relative;
     }
   }
 
@@ -129,6 +157,10 @@ h1 {
         margin-left: 0px !important;
         margin-right: 0px !important;
       }
+      .btn-stat-info {
+        margin-bottom: -100px !important;
+        margin-left: -120px !important;
+      }
   }
 
   @media only screen and (min-width: 992px) {
@@ -138,6 +170,9 @@ h1 {
       .row{
         margin-left: 0px !important;
         margin-right: 0px !important;
+      }
+      .btn-stat-info {
+        margin-bottom: 0px !important;
       }
   }
 
@@ -157,16 +192,16 @@ h1 {
       margin-top: 10px !important;
       padding: 0px 10px px 0px;
     }
-    .card-Images {
-      margin-top: 0px !important;
-    }
     .row{
       margin-left: 0px !important;
       margin-right: 0px !important;
     }
+    .btn-stat-info {
+      margin-bottom: 0px !important;
+    }
   }
   
-  .card:nth-child(1n) h1 {
+  /* .card:nth-child(1n) h1 {
     background-image: linear-gradient(120deg, #f7f8f4 0%, #ebb07f 100%);
   }
 
@@ -186,7 +221,7 @@ h1 {
   }
   .card:nth-child(6n) h1 {
     background-image: linear-gradient(120deg, #f7f8f4 0%, #d4c56f 100%);
-  }
+  } */
 
   .alert{
       position: absolute;
@@ -203,7 +238,8 @@ h1 {
       padding: 0 0.5rem 0.5rem;
       margin: 0;
       color: #000000; 
-      font-weight: bold;
+      font-weight: 700;
+      font-family: 'Dosis', sans-serif !important;
   }
 
   /* footer------------- */
@@ -307,4 +343,36 @@ h1 {
   color: #000000;
   letter-spacing: 0.5px;
   background-color: #ebf5f7;
+}
+
+h1 .anime-span img{
+  width: 40px !important;
+  position: absolute;
+  margin-left: 15rem;
+  margin-top: inherit;
+}
+
+.btn-stat-info {
+  font-size: 26px;
+  margin-bottom: -100px !important;
+}
+.btn-stat-info a{
+  color: #000000;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif !important; 
+  font-weight: 500;
+}
+.btn-stat-info a:hover {
+  color: #0e76a8;
+}
+.fa-bar-chart , .fa-angle-double-right {
+  color: #0e76a8;
+}
+.fa-bar-chart:hover {
+  color: white;
+  background-color: #68ff03;
+}
+.fa-angle-double-right:hover {
+  color: white;
+  background-color: #68ff03;
 }

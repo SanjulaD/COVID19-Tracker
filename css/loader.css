@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background-image: linear-gradient(120deg, #bbe6e6 0%, #6f8bbb 100%);
+	background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 100%);
 }
 .loader {
 	width: 40px;
@@ -24,19 +24,19 @@
 	0% {
 		-webkit-transform: rotate(0deg);
 		transform: rotate(0deg);
-		border: 4px solid #ffffff;
+		border: 4px solid #0066ff;
 		border-left-color: transparent;
 	}
 	50% {
 		-webkit-transform: rotate(180deg);
 		transform: rotate(180deg);
-		border: 4px solid #f8f8f8;
+		border: 4px solid #008cff;
 		border-left-color: transparent;
 	}
 	100% {
 		-webkit-transform: rotate(360deg);
 		transform: rotate(360deg);
-		border: 4px solid #ffffff;
+		border: 4px solid #68ff03;
 		border-left-color: transparent;
 	}
 }

@@ -81,13 +81,25 @@ request.onload = function () {
         const result1 = document.createElement('h2');
         result1.textContent = myData.data.local_total_cases;      
         console.log('Total Cases Confirmed : '+ result1.textContent);
+        const gifSpan1 = document.createElement('span');
+        gifSpan1.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif1 = document.createElement('img');
+        gif1.src = 'https://covid.iq.lk/assets/anime/create-order.gif';
+        head1.appendChild(gifSpan1);
+        gifSpan1.appendChild(gif1);
         
         //adding local total cases
         const head2 = document.createElement('h1');
-        head2.textContent = "Suspected & Hospitalized";
+        head2.textContent = "Observation Cases";
         const result2 = document.createElement('h2');
         result2.textContent = myData.data.local_total_number_of_individuals_in_hospitals;
         console.log('Total cases : '+result2.textContent);
+        const gifSpan2 = document.createElement('span');
+        gifSpan2.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif2 = document.createElement('img');
+        gif2.src = 'https://covid.iq.lk/assets/anime/searching.gif';
+        head2.appendChild(gifSpan2);
+        gifSpan2.appendChild(gif2);
 
         //adding local deaths
         const head3 = document.createElement('h1');
@@ -98,6 +110,12 @@ request.onload = function () {
             result3.textContent = 0;
             console.log(result3.textContent);
         }console.log('New Cases : '+result3.textContent);
+        const gifSpan3 = document.createElement('span');
+        gifSpan3.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif3 = document.createElement('img');
+        gif3.src = 'https://covid.iq.lk/assets/anime/calendar-tear.gif';
+        head3.appendChild(gifSpan3);
+        gifSpan3.appendChild(gif3);
 
         //adding recovered
         const head4 = document.createElement('h1');
@@ -105,6 +123,12 @@ request.onload = function () {
         const result4 = document.createElement('h2');
         result4.textContent = myData.data.local_recovered;
         console.log('Recovered : '+result4.textContent);
+        const gifSpan4 = document.createElement('span');
+        gifSpan4.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif4 = document.createElement('img');
+        gif4.src = 'https://covid.iq.lk/assets/anime/running-heart.gif';
+        head4.appendChild(gifSpan4);
+        gifSpan4.appendChild(gif4);
 
         //adding deaths
         const head5 = document.createElement('h1');
@@ -112,6 +136,12 @@ request.onload = function () {
         const result5 = document.createElement('h2');
         result5.textContent = myData.data.local_deaths;
         console.log('Total Deaths : '+result5.textContent);
+        const gifSpan5 = document.createElement('span');
+        gifSpan5.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif5 = document.createElement('img');
+        gif5.src = 'https://covid.iq.lk/assets/anime/warning-blink.gif';
+        head5.appendChild(gifSpan5);
+        gifSpan5.appendChild(gif5);
 
         //adding current active cases
         const head6 = document.createElement('h1');
@@ -119,6 +149,12 @@ request.onload = function () {
         const result6 = document.createElement('h2');
         result6.textContent = myData.data.local_active_cases;
         console.log('Current active cases : '+result6.textContent);
+        const gifSpan6 = document.createElement('span');
+        gifSpan6.setAttribute('class' , 'opacity-7 text-muted anime-span');
+        const gif6 = document.createElement('img');
+        gif6.src = 'https://covid.iq.lk/assets/anime/activity.gif';
+        head6.appendChild(gifSpan6);
+        gifSpan6.appendChild(gif6);
 
         //append total confirmed cases
         card1.appendChild(head1);
@@ -153,6 +189,20 @@ request.onload = function () {
         app.appendChild(errorMessage);
     }
 
+    const covidStatDiv = document.createElement('div');
+    covidStatDiv.setAttribute('class' , 'btn-group btn-stat');
+
+    const statBtn = document.createElement('button');
+    statBtn.setAttribute('class' , 'btn btn-stat-info');
+    statBtn.setAttribute('type' , 'button');
+    statBtn.setAttribute('href' , 'index.html');
+    const statIcon = document.createElement('i');
+    statIcon.setAttribute('class' , 'fa fa-angle-double-right');
+    statIcon.setAttribute('href' , 'index.html');
+    const statBtnName = document.createElement('a');
+    statBtnName.setAttribute('href' , 'index.html');
+    statBtnNameInfo = document.createTextNode('More Information ');
+    
     container.appendChild(card1);
     container.appendChild(card2);
     container.appendChild(card3);
@@ -160,6 +210,11 @@ request.onload = function () {
     container.appendChild(card5);
     container.appendChild(card6);   
 
+    container.appendChild(covidStatDiv);
+    covidStatDiv.appendChild(statBtn);
+    statBtn.appendChild(statBtnName);
+    statBtn.appendChild(statIcon);
+    statBtnName.appendChild(statBtnNameInfo);
 }
     
 
