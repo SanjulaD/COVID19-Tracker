@@ -69,8 +69,11 @@
     <a id="button"></a>
 
     <script>
-        fetch("https://corona.lmao.ninja/v2/countries?yesterday=false&sort=cases").then(
+	const proxyurl = "https://cors-anywhere.herokuapp.com/";
+	const url = "https://corona.lmao.ninja/v2/countries?yesterday=false&sort=cases";
+        fetch(proxyurl + url).then(
             res => {
+		
                 res.json().then(
                     data => {
                         console.log(data);
