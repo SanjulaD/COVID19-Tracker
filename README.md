@@ -10,3 +10,5 @@ Front-end wise I've tried to make it as simple as possible, therefore the dashbo
 
 # Data source
 The dashboard is using COVID-19 API [Health Promotion Bureau](https://www.hpb.health.gov.lk/en/api-documentation) (Sri Lanka) as a data source :chart_with_downwards_trend:	.
+
+
